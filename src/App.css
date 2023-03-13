@@ -5,76 +5,69 @@
 }
 
 .App {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: rgb(239, 243, 243);
+  background-color: lightblue;
 }
 
 .reviews {
-  overflow: hidden;
-  width: 50rem;
+  width: 40rem;
+  height: 28rem;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 2rem;
+  border-radius: .3rem;
 }
 
 .detail {
-  white-space: nowrap;
-  transition: transform 0.3s;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
-  padding: 2rem;
-}
-
-.review {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: .3rem;
-  height: 30rem;
 }
 
-.review-img {
+img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
 }
 
-.review h1 {
+h1 {
+  margin-top: 1rem;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-.review p {
+h2 {
+  margin-bottom: .7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(141, 141, 245);
+}
+
+p {
   text-align: center;
-  white-space: normal;
-  padding: 0 1rem;
+  line-height: 1.5rem;
 }
 
 .reviewbtns {
-  position: absolute;
-  bottom: 10rem;
-  width: 4rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
-.reviewbtns button {
+button {
   border: none;
-  font-size: 1.3rem;
   background-color: transparent;
-  color: rgb(71, 71, 116);
   cursor: pointer;
+  color: rgb(141, 141, 245);
+  font-size: 1.5rem;
 }
 
-/*
-.detail {
-  display: flex;
-}
-*/
